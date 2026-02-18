@@ -1,5 +1,3 @@
 # -*- coding: utf-8 -*-
 """Package declaring AYON addon 'core' version."""
-from __future__ import annotations
-
-__version__ = "1.8.0-ls.0.0.2"
+__version__ = "1.8.0-ls.0.0.3"

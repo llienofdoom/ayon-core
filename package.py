@@ -2,7 +2,7 @@ from __future__ import annotations
 
 name = "core"
 title = "Core"
-version = "1.8.0-ls.0.0.2"
+version = "1.8.0-ls.0.0.3"
 
 client_dir = "ayon_core"
 
