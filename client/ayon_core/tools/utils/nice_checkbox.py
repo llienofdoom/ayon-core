@@ -1,3 +1,4 @@
+from __future__ import annotations
 from math import floor, ceil
 
 from qtpy import QtWidgets, QtCore, QtGui

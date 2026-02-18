@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 class ApplicationNotRunning(Exception):
     """Raised when the QApplication is not running."""
     pass

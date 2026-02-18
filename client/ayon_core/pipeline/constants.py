@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 # Metadata ID of loaded container into scene
 AYON_CONTAINER_ID = "ayon.load.container"
 AYON_INSTANCE_ID = "ayon.create.instance"

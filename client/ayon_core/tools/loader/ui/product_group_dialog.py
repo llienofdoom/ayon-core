@@ -1,3 +1,4 @@
+from __future__ import annotations
 from qtpy import QtWidgets
 
 from ayon_core.tools.utils import PlaceholderLineEdit

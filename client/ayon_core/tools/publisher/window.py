@@ -707,8 +707,27 @@ class PublisherWindow(QtWidgets.QDialog):
         self._help_dialog.show()
 
         window = self.window()
-        screen = window.screen()
-        screen_geo = screen.geometry()
+
+
+        try:
+
+
+            screen = window.screen()
+
+
+            screen_geo = screen.geometry()
+
+
+        except AttributeError:
+
+
+            # Backwards compatibility for older Qt versions
+
+
+            desktop = QtWidgets.QDesktopWidget()
+
+
+            screen_geo = desktop.availableGeometry(window)
 
         window_geo = window.geometry()
         dialog_x = window_geo.x() + window_geo.width()

@@ -1,3 +1,4 @@
+from __future__ import annotations
 import traceback
 
 from qtpy import QtWidgets

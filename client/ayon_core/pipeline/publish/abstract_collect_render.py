@@ -4,6 +4,7 @@
 TODO: use @dataclass when times come.
 
 """
+from __future__ import annotations
 from abc import abstractmethod
 
 import attr

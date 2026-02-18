@@ -1,3 +1,4 @@
+from __future__ import annotations
 from .constants import (
     AVALON_CONTAINER_ID,
     AVALON_INSTANCE_ID,

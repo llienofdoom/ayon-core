@@ -5,6 +5,7 @@ Requires:
 Provides:
     context     -> machine (str)
 """
+from __future__ import annotations
 
 import pyblish.api
 

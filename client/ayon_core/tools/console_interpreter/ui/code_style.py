@@ -1,3 +1,4 @@
+from __future__ import annotations
 from pygments.style import Style
 from pygments.token import (
     Comment,

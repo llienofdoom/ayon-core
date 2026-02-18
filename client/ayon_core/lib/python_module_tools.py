@@ -1,4 +1,5 @@
 """Tools for working with python modules and classes."""
+from __future__ import annotations
 import os
 import sys
 import types

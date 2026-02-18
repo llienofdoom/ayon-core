@@ -1,3 +1,4 @@
+from __future__ import annotations
 import collections
 
 import ayon_api

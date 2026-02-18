@@ -1,3 +1,4 @@
+from __future__ import annotations
 from enum import Enum
 from math import floor, ceil, sqrt, sin, cos, acos, pi as PI
 from qtpy import QtWidgets, QtCore, QtGui

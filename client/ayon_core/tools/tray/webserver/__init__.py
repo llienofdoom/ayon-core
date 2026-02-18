@@ -1,3 +1,4 @@
+from __future__ import annotations
 from .base_routes import RestApiEndpoint
 from .server import find_free_port, WebServerManager
 

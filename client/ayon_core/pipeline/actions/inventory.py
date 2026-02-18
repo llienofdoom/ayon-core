@@ -1,3 +1,4 @@
+from __future__ import annotations
 import logging
 
 from ayon_core.pipeline.plugin_discover import (

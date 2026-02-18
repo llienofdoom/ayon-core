@@ -5,6 +5,7 @@ This module contains a unified plugin that handles:
 - Source media frame ranges
 - Retimed clip frame ranges
 """
+from __future__ import annotations
 
 from pprint import pformat
 

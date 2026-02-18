@@ -1,3 +1,4 @@
+from __future__ import annotations
 from .version import __version__
 from .utils import get_icon_name_char
 from .iconic_font import (

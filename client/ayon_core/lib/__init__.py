@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+from __future__ import annotations
+
 # flake8: noqa E402
 """AYON lib functions."""
 

@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 """Get configuration data."""
+from __future__ import annotations
 import datetime
 
 

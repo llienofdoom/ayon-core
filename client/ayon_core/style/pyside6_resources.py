@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 # Resource object code (Python 3)
 # Created by: object code
 # Created by: The Resource Compiler for Qt version 6.4.1

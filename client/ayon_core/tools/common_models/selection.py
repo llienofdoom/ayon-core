@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 class _ExampleController:
     def emit_event(self, topic, data, **kwargs):
         pass

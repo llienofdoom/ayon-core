@@ -1,3 +1,4 @@
+from __future__ import annotations
 import copy
 import collections
 from uuid import uuid4

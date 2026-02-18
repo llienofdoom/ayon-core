@@ -1,3 +1,4 @@
+from __future__ import annotations
 import os
 from .version import __version__
 

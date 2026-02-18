@@ -1,3 +1,4 @@
+from __future__ import annotations
 import pyblish.api
 import ayon_api
 

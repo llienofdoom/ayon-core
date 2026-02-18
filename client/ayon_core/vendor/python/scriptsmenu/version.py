@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 VERSION_MAJOR = 1
 VERSION_MINOR = 5
 VERSION_PATCH = 2

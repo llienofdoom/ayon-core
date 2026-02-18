@@ -1,3 +1,4 @@
+from __future__ import annotations
 import warnings
 
 from ayon_core.lib import CacheItem as _CacheItem

@@ -1,3 +1,4 @@
+from __future__ import annotations
 from qtpy import QtWidgets, QtCore
 from ayon_core.tools.utils import set_style_property
 

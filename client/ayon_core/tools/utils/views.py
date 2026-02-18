@@ -1,3 +1,4 @@
+from __future__ import annotations
 from ayon_core.tools.flickcharm import FlickCharm
 
 from qtpy import QtWidgets, QtCore, QtGui

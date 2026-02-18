@@ -1,3 +1,4 @@
+from __future__ import annotations
 import os
 import shutil
 from ayon_core.settings import get_project_settings

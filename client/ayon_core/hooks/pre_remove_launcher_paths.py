@@ -1,4 +1,5 @@
 """"Pre launch hook to remove launcher paths from the system."""
+from __future__ import annotations
 import os
 
 from ayon_applications import PreLaunchHook

@@ -4,6 +4,7 @@ Provides:
     context -> folderPath (str)
     context -> task (str)
 """
+from __future__ import annotations
 
 import pyblish.api
 from ayon_core.pipeline import get_current_context

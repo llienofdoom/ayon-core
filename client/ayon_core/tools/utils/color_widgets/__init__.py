@@ -1,3 +1,4 @@
+from __future__ import annotations
 from .color_picker_widget import (
     ColorPickerWidget
 )

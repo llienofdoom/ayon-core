@@ -1,4 +1,5 @@
 """Trait classes for the pipeline."""
+from __future__ import annotations
 from .color import ColorManaged
 from .content import (
     Bundle,

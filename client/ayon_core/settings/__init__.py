@@ -1,3 +1,4 @@
+from __future__ import annotations
 from .lib import (
     get_ayon_settings,
     get_studio_settings,

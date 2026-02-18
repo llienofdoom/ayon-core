@@ -14,6 +14,7 @@ threshold in which it will still propagate the user pressed click if he or she
 travelled only very slightly with the cursor.
 
 """
+from __future__ import annotations
 
 import copy
 from qtpy import QtWidgets, QtCore, QtGui

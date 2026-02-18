@@ -1,3 +1,4 @@
+from __future__ import annotations
 import mock
 import os
 import pytest  # noqa

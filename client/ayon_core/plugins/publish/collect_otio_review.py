@@ -10,6 +10,7 @@ Provides:
     instance -> otioReviewClips
     instance -> families (adding ["review", "ftrack"])
 """
+from __future__ import annotations
 
 from pprint import pformat
 

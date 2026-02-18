@@ -1,3 +1,4 @@
+from __future__ import annotations
 from .actions import ActionsModel
 from .selection import LauncherSelectionModel
 from .workfiles import WorkfilesModel

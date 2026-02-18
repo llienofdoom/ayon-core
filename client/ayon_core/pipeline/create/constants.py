@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 PRODUCT_NAME_ALLOWED_SYMBOLS = "a-zA-Z0-9_."
 DEFAULT_PRODUCT_TEMPLATE = "{family}{Variant}"
 PRE_CREATE_THUMBNAIL_KEY = "thumbnail_source"

@@ -1,4 +1,5 @@
 """Package to handle compatibility checks for pipeline components."""
+from __future__ import annotations
 import ayon_api
 
 

@@ -6,6 +6,7 @@ Provides:
         - cleanupFullPaths (list)
         - cleanupEmptyDirs (list)
 """
+from __future__ import annotations
 
 import pyblish.api
 

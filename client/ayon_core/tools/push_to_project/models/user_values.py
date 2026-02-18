@@ -1,3 +1,4 @@
+from __future__ import annotations
 import re
 
 from ayon_core.pipeline.create import PRODUCT_NAME_ALLOWED_SYMBOLS

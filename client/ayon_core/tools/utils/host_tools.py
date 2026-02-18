@@ -3,6 +3,7 @@
 It is possible to create `HostToolsHelper` in host implementation or
 use singleton approach with global functions (using helper anyway).
 """
+from __future__ import annotations
 import os
 
 import pyblish.api

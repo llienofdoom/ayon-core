@@ -1,3 +1,4 @@
+from __future__ import annotations
 from .structures import HostMsgAction
 from .lib import (
     TrayState,

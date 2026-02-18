@@ -22,6 +22,7 @@ Why are separated:
 Todos:
     The comment per instance is not sent via farm.
 """
+from __future__ import annotations
 
 import pyblish.api
 from ayon_core.lib.attribute_definitions import TextDef

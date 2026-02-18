@@ -1,3 +1,4 @@
+from __future__ import annotations
 import collections
 import json
 from typing import Optional, Union

@@ -109,6 +109,7 @@ Example:
     ayon addon example mycommand --arg1 value1 --arg2
     ```
 """
+from __future__ import annotations
 
 import collections
 

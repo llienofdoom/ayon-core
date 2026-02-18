@@ -1,4 +1,5 @@
 """Backend models that can be used in controllers."""
+from __future__ import annotations
 
 from .cache import CacheItem, NestedCacheItem
 from .projects import (

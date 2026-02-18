@@ -7,6 +7,7 @@ Provides:
     instance    -> originalBasename
     instance    -> originalDirname
 """
+from __future__ import annotations
 
 import os
 

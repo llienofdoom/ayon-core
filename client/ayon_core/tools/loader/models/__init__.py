@@ -1,3 +1,4 @@
+from __future__ import annotations
 from .selection import SelectionModel
 from .products import ProductsModel
 from .actions import LoaderActionsModel

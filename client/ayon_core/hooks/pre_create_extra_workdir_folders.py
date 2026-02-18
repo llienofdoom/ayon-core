@@ -1,3 +1,4 @@
+from __future__ import annotations
 import os
 from ayon_applications import PreLaunchHook, LaunchTypes
 from ayon_core.pipeline.workfile import create_workdir_extra_folders

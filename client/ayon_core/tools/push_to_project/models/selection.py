@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 class PushToProjectSelectionModel(object):
     """Model handling selection changes.
 

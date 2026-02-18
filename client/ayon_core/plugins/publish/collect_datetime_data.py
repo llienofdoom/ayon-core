@@ -3,6 +3,7 @@
 Provides:
     context -> datetimeData
 """
+from __future__ import annotations
 
 import pyblish.api
 from ayon_core.lib.dateutils import get_datetime_data

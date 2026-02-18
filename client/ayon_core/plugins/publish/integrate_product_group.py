@@ -7,6 +7,7 @@ Provides:
     instance -> productGroup (str)
 
 """
+from __future__ import annotations
 import pyblish.api
 
 from ayon_core.lib.profiles_filtering import filter_profiles

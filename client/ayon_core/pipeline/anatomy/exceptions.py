@@ -1,3 +1,4 @@
+from __future__ import annotations
 from ayon_core.lib.path_templates import TemplateUnsolved
 
 

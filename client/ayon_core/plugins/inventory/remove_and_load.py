@@ -1,3 +1,4 @@
+from __future__ import annotations
 import ayon_api
 
 from ayon_core.pipeline import get_current_project_name, InventoryAction

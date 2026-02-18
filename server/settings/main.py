@@ -1,3 +1,4 @@
+from __future__ import annotations
 import json
 from pydantic import validator
 from ayon_server.settings import (

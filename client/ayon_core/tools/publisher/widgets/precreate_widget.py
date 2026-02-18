@@ -1,3 +1,4 @@
+from __future__ import annotations
 from qtpy import QtWidgets, QtCore
 
 from ayon_core.tools.attribute_defs import create_widget_for_attr_def

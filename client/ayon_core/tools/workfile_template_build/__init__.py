@@ -1,3 +1,4 @@
+from __future__ import annotations
 from .window import WorkfileBuildPlaceholderDialog
 from .lib import open_template_ui
 

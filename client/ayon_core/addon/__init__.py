@@ -1,4 +1,5 @@
 """Addons for AYON."""
+from __future__ import annotations
 from . import click_wrap
 from .base import (
     AddonsManager,

@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 """Cleanup leftover files from publish."""
+from __future__ import annotations
 import os
 import shutil
 import pyblish.api

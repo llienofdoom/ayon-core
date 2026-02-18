@@ -1,4 +1,5 @@
 """Metadata traits."""
+from __future__ import annotations
 from typing import ClassVar
 
 from ayon_core.pipeline.traits import TraitBase

@@ -1,3 +1,4 @@
+from __future__ import annotations
 import os
 import sys
 import io
@@ -53,8 +54,13 @@ def checkstate_enum_to_int(state):
 
 def center_window(window):
     """Move window to center of it's screen."""
-    screen = window.screen()
-    screen_geo = screen.geometry()
+    try:
+        screen = window.screen()
+        screen_geo = screen.geometry()
+    except AttributeError:
+        # Backwards compatibility for older Qt versions
+        desktop = QtWidgets.QDesktopWidget()
+        screen_geo = desktop.availableGeometry(window)
 
     geo = window.frameGeometry()
     geo.moveCenter(screen_geo.center())

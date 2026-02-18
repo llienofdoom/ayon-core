@@ -1,3 +1,4 @@
+from __future__ import annotations
 from ayon_applications import PreLaunchHook
 
 from ayon_core.pipeline.colorspace import get_imageio_config_preset

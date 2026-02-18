@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 """Abstract ExpectedFile class definition."""
+from __future__ import annotations
 from abc import ABC, abstractmethod
 
 

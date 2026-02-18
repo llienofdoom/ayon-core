@@ -1,3 +1,4 @@
+from __future__ import annotations
 from .constants import (
     PRODUCT_NAME_ALLOWED_SYMBOLS,
     DEFAULT_PRODUCT_TEMPLATE,

@@ -1,3 +1,4 @@
+from __future__ import annotations
 import os
 from ayon_core.lib import is_staging_enabled
 

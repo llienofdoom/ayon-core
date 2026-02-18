@@ -24,6 +24,7 @@ Note :
     https://github.com/MustafaJafar/ayon-recipes/blob/main/validate_from_code.py
 
 """
+from __future__ import annotations
 
 import copy
 import json

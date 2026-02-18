@@ -1,3 +1,4 @@
+from __future__ import annotations
 from .path_resolving import (
     get_workfile_template_key_from_context,
     get_workfile_template_key,

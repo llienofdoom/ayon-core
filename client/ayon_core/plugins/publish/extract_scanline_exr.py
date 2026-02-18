@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 """Convert exrs in representation to tiled exrs usin oiio tools."""
+from __future__ import annotations
 import os
 import shutil
 

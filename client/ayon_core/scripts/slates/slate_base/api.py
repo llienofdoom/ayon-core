@@ -1,3 +1,4 @@
+from __future__ import annotations
 from .font_factory import FontFactory
 from .base import BaseObj, load_default_style
 from .main_frame import MainFrame

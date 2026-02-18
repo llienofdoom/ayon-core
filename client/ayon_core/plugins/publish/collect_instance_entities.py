@@ -10,6 +10,7 @@ Provides:
     instance -> folderEntity
     instance -> taskEntity
 """
+from __future__ import annotations
 import collections
 
 import pyblish.api

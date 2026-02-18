@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 """Package for handling AYON command line arguments."""
+from __future__ import annotations
 import os
 import sys
 import logging

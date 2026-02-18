@@ -1,3 +1,4 @@
+from __future__ import annotations
 from pyblish import api
 from ayon_core.settings import get_project_settings
 

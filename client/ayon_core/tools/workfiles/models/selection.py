@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 class SelectionModel(object):
     """Model handling selection changes.
 

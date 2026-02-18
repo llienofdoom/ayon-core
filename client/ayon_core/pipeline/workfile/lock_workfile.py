@@ -1,3 +1,4 @@
+from __future__ import annotations
 import os
 import json
 from ayon_core.lib import Logger, filter_profiles

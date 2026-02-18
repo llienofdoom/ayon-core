@@ -12,6 +12,7 @@ to use same colors that are available fro stylesheets.
 It is possible that some colors may not be used in stylesheet at all and thei
 definition is used only in code.
 """
+from __future__ import annotations
 
 import re
 

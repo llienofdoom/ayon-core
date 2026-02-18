@@ -1,3 +1,4 @@
+from __future__ import annotations
 import time
 import collections
 import platform
@@ -530,8 +531,20 @@ class ActionMenuPopup(QtWidgets.QWidget):
 
         label_sh = self._group_label.sizeHint()
         label_width, label_height = label_sh.width(), label_sh.height()
-        window = self.screen()
-        window_geo = window.geometry()
+
+        try:
+
+            window = self.screen()
+
+            window_geo = window.geometry()
+
+        except AttributeError:
+
+            # Backwards compatibility for older Qt versions
+
+            desktop = QtWidgets.QDesktopWidget()
+
+            window_geo = desktop.availableGeometry(self)
         _target_x = pos.x() + target_size.width()
         _target_y = pos.y() + target_size.height() + label_height
         right_to_left = (
@@ -1137,8 +1150,25 @@ class ActionsWidget(QtWidgets.QWidget):
         dialog_geo = dialog.geometry()
         dialog_geo.moveCenter(target_center_pos)
 
-        screen = dialog.screen()
-        screen_geo = screen.availableGeometry()
+        try:
+
+
+            screen = dialog.screen()
+
+
+            screen_geo = screen.availableGeometry()
+
+
+        except AttributeError:
+
+
+            # Backwards compatibility for older Qt versions
+
+
+            desktop = QtWidgets.QDesktopWidget()
+
+
+            screen_geo = desktop.availableGeometry(dialog)
         if screen_geo.left() > dialog_geo.left():
             dialog_geo.moveLeft(screen_geo.left())
         elif screen_geo.right() < dialog_geo.right():

@@ -1,3 +1,4 @@
+from __future__ import annotations
 import copy
 import pyblish.api
 from typing import List

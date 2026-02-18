@@ -12,6 +12,7 @@ Provides:
     context -> taskEntity - Task entity from AYON server only if 'folderPath'
         and 'task' are set in context data.
 """
+from __future__ import annotations
 
 import pyblish.api
 import ayon_api

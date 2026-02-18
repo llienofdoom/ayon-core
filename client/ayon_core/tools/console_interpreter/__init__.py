@@ -1,3 +1,4 @@
+from __future__ import annotations
 from .abstract import AbstractInterpreterController
 from .control import InterpreterController
 

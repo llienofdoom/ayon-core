@@ -6,6 +6,7 @@ Requires:
 Provides:
     context, instances -> All data from previous publishing process.
 """
+from __future__ import annotations
 
 import os
 import json

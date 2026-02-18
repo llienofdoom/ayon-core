@@ -1,3 +1,4 @@
+from __future__ import annotations
 from qtpy import QtWidgets, QtCore, QtGui
 import qtawesome
 

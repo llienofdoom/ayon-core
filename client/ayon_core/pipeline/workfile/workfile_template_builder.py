@@ -10,6 +10,7 @@ Placeholders are created using placeholder plugins which should care about
 logic and data of placeholder items. 'PlaceholderItem' is used to keep track
 about its progress.
 """
+from __future__ import annotations
 
 import os
 import re

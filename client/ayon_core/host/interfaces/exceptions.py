@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 class MissingMethodsError(ValueError):
     """Exception when host miss some required methods for a specific workflow.
 

@@ -5,6 +5,7 @@ Requires:
 Provides:
     context         -> currentFile (str)
 """
+from __future__ import annotations
 
 import os
 import pyblish.api

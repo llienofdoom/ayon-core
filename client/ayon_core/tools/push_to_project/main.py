@@ -1,3 +1,4 @@
+from __future__ import annotations
 import click
 
 from ayon_core.tools.utils import get_ayon_qt_app

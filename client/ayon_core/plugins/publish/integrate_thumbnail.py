@@ -21,6 +21,7 @@
             they usually have 'delete' tag to skip the integration.
 
 """
+from __future__ import annotations
 
 import os
 import collections

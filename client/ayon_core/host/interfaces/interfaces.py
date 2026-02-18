@@ -1,3 +1,4 @@
+from __future__ import annotations
 from abc import abstractmethod
 
 from ayon_core.host.abstract import AbstractHost

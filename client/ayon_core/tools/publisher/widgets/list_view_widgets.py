@@ -23,6 +23,7 @@ selection can be enabled disabled using checkbox or keyboard key presses:
 ```
 """
 from __future__ import annotations
+from __future__ import annotations
 
 import collections
 from typing import Optional

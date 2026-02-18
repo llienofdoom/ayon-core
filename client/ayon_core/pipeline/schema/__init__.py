@@ -11,6 +11,7 @@ Resources:
     http://spacetelescope.github.io/understanding-json-schema/index.html
 
 """
+from __future__ import annotations
 
 import os
 import json

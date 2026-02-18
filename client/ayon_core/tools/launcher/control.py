@@ -1,3 +1,4 @@
+from __future__ import annotations
 from typing import Optional
 
 from ayon_core.lib import Logger

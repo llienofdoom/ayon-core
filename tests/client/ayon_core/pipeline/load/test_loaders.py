@@ -1,4 +1,5 @@
 """Test loaders in the pipeline module."""
+from __future__ import annotations
 
 from ayon_core.pipeline.load import LoaderPlugin
 

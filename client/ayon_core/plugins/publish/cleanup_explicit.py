@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 """Cleanup files when publishing is done."""
+from __future__ import annotations
 import os
 import shutil
 import pyblish.api

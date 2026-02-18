@@ -11,6 +11,7 @@
     It should be better to control integration of thumbnail in one place than
     configure it in multiple places on host implementations.
 """
+from __future__ import annotations
 import pyblish.api
 
 from ayon_core.lib.profiles_filtering import filter_profiles

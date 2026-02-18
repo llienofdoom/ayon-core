@@ -4,6 +4,7 @@ Receive OpenColorIO information and store it in JSON format for processed
 that don't have access to OpenColorIO or their version of OpenColorIO is
 not compatible.
 """
+from __future__ import annotations
 
 import json
 from pathlib import Path

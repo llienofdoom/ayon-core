@@ -1,3 +1,4 @@
+from __future__ import annotations
 from .icons import (
     get_icon_path,
     get_pixmap,

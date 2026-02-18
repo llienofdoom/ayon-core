@@ -1,3 +1,4 @@
+from __future__ import annotations
 from .widgets import (
     create_widget_for_attr_def,
     AttributeDefinitionsWidget,

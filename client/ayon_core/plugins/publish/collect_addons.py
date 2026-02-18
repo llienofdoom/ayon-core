@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 """Collect AYON addons."""
+from __future__ import annotations
 import pyblish.api
 
 from ayon_core.addon import AddonsManager

@@ -1,3 +1,4 @@
+from __future__ import annotations
 from qtpy import QtWidgets, QtCore
 
 from ayon_core.tools.publisher.abstract import AbstractPublisherFrontend

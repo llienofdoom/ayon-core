@@ -1,3 +1,4 @@
+from __future__ import annotations
 from .scriptsmenu import ScriptsMenu
 from . import version
 

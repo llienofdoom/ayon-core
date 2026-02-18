@@ -1,3 +1,4 @@
+from __future__ import annotations
 from .main import CoreSettings, DEFAULT_VALUES
 from .conversion import convert_settings_overrides
 

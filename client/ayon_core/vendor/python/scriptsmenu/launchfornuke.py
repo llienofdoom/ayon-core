@@ -1,3 +1,4 @@
+from __future__ import annotations
 import scriptsmenu
 from qtpy import QtWidgets
 

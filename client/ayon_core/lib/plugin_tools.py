@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 """AYON plugin tools."""
+from __future__ import annotations
 import os
 import re
 import collections

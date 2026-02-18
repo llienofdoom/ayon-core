@@ -1,3 +1,4 @@
+from __future__ import annotations
 from ayon_api import get_project, get_folder_by_path, get_task_by_name
 
 from ayon_core.pipeline import Anatomy

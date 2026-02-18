@@ -1,4 +1,5 @@
 """Events holding data about specific event."""
+from __future__ import annotations
 import os
 import re
 import copy

@@ -5,6 +5,7 @@ enter source and destination roots and maya will try each found source
 in referenced file replace with each destination paths. First path which
 exists is used.
 """
+from __future__ import annotations
 
 import os
 from abc import ABC, abstractmethod

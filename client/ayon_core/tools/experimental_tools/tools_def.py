@@ -1,3 +1,4 @@
+from __future__ import annotations
 import os
 from .pyblish_debug_stepper import DebugUI
 

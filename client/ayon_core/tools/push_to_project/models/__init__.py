@@ -1,3 +1,4 @@
+from __future__ import annotations
 from .selection import PushToProjectSelectionModel
 from .user_values import UserPublishValuesModel
 from .integrate import IntegrateModel

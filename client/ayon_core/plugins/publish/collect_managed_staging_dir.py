@@ -7,6 +7,7 @@ Provides:
     instance.data     -> stagingDir (folder path)
                       -> stagingDir_persistent (bool)
 """
+from __future__ import annotations
 
 import pyblish.api
 

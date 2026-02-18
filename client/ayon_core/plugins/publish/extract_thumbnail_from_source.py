@@ -11,6 +11,7 @@ Todos:
     No size handling. Size of input is used for output thumbnail which can
         cause issues.
 """
+from __future__ import annotations
 
 import os
 import tempfile

@@ -1,3 +1,4 @@
+from __future__ import annotations
 from qtpy import QtWidgets, QtCore, QtGui
 
 from ayon_core.style import load_stylesheet, get_app_icon_path

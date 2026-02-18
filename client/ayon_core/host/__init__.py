@@ -1,3 +1,4 @@
+from __future__ import annotations
 from .constants import ContextChangeReason
 from .abstract import AbstractHost, ApplicationInformation
 from .host import (

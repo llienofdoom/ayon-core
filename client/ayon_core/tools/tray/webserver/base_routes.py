@@ -2,6 +2,7 @@
 
 These must not be imported in module itself to not break in-DCC process.
 """
+from __future__ import annotations
 
 import inspect
 from aiohttp.http_exceptions import HttpBadRequest

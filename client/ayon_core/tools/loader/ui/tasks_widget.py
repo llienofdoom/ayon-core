@@ -1,3 +1,4 @@
+from __future__ import annotations
 import collections
 import hashlib
 from typing import Optional
