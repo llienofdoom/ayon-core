@@ -16,7 +16,16 @@ def _nuke_main_menubar():
     """Retrieve the main menubar of the Nuke window"""
     nuke_window = _nuke_main_window()
 
-    return nuke_window.menuBar()
+    # Older PySide2 (e.g. Nuke 13) may not wrap the window as
+    # QMainWindow in Python, so .menuBar() is unavailable.
+    # Use findChild as a fallback to support both old and new versions.
+    if hasattr(nuke_window, 'menuBar'):
+        return nuke_window.menuBar()
+
+    menu_bar = nuke_window.findChild(QtWidgets.QMenuBar)
+    if menu_bar is None:
+        raise RuntimeError('Could not find Nuke menu bar')
+    return menu_bar
 
 
 def main(title="Scripts"):
