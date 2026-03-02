@@ -1,8 +1,6 @@
-from __future__ import annotations
-
 name = "core"
 title = "Core"
-version = "1.8.0-ls.0.0.3"
+version = "1.8.3+dev"
 
 client_dir = "ayon_core"
 

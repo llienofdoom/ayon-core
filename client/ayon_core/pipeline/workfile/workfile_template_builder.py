@@ -1490,6 +1490,7 @@ class PlaceholderLoadMixin(object):
             attribute_definitions.EnumDef(
                 "link_type",
                 label="Link Type",
+                default=options.get("link_type"),
                 items=link_types_enum_items,
                 tooltip=(
                     "Link Type\n"
