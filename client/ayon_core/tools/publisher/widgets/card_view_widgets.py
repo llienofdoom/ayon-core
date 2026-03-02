@@ -20,8 +20,6 @@ Only one item can be selected at a time.
 ```
 """
 from __future__ import annotations
-from __future__ import annotations
-from __future__ import annotations
 
 import re
 import collections
