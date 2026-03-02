@@ -165,6 +165,7 @@ class CollectAudio(pyblish.api.ContextPlugin):
             for product_id, version_entity in (
                 last_versions_by_product_id.items()
             )
+            if version_entity is not None
         }
         version_ids = set(version_id_by_product_id.values())
         if not version_ids:
