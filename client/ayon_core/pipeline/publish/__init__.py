@@ -56,10 +56,17 @@ from .lib import (
 )
 
 from .abstract_expected_files import ExpectedFiles
-from .abstract_collect_render import (
-    RenderInstance,
-    AbstractCollectRender,
-)
+try:
+    from .abstract_collect_render import (
+        RenderInstance,
+        AbstractCollectRender,
+    )
+except (ImportError, SyntaxError):
+    # Python 3.7 (e.g. Nuke 13.0) cannot parse typing_extensions >= 4.x
+    # which is a transitive dependency of attr used by abstract_collect_render.
+    # Hosts on Python 3.7 do not use the abstract render collection pipeline.
+    RenderInstance = None
+    AbstractCollectRender = None
 
 
 __all__ = (
