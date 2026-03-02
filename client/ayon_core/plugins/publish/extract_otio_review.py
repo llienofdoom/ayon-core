@@ -287,7 +287,8 @@ class ExtractOTIOReview(
         representation = self._create_representation(start, duration)
 
         # add colorspace data to representation
-        if colorspace := instance.data.get("reviewColorspace"):
+        colorspace = instance.data.get("reviewColorspace")
+        if colorspace:
             self.set_representation_colorspace(
                 representation, instance.context, colorspace
             )
