@@ -157,6 +157,9 @@ class CollectAudio(pyblish.api.ContextPlugin):
         last_versions_by_product_id = ayon_api.get_last_versions(
             project_name, product_ids=product_ids, fields={"id", "productId"}
         )
+        # Older ayon_api versions may return None instead of an empty dict
+        if not last_versions_by_product_id:
+            return output
         version_id_by_product_id = {
             product_id: version_entity["id"]
             for product_id, version_entity in (
