@@ -372,9 +372,10 @@ class ExportOTIOOptionsDialog(QtWidgets.QDialog):
 
         media_start_frame = clip_start_frame = 0
         media_framerate = framerate
-        if file_metadata := get_image_info_metadata(
+        file_metadata = get_image_info_metadata(
             repre_path, ["timecode", "duration", "framerate"], self.log
-        ):
+        )
+        if file_metadata:
             # get media framerate and convert to float with 3 decimal places
             media_framerate = file_metadata["framerate"]
             media_framerate = float(f"{media_framerate:.4f}")

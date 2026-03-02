@@ -7,7 +7,17 @@ import warnings
 from copy import deepcopy
 from typing import Any, Union, Optional
 
-import attr
+try:
+    import attr
+except (ImportError, SyntaxError) as exc:
+    # Python 3.7 (e.g. Nuke 13.0) cannot parse typing_extensions >= 4.x
+    # which is a transitive dependency of attr. Raise a clean ImportError
+    # so farm/deadline plugins that import this module fail gracefully
+    # rather than with a cascading SyntaxError.
+    raise ImportError(
+        "attr is not importable on this Python version "
+        "(requires Python 3.8+ via typing_extensions): {}".format(exc)
+    ) from exc
 import ayon_api
 import clique
 from ayon_core.lib import Logger
