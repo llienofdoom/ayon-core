@@ -36,11 +36,7 @@ class CompatibilityFixer:
 
     def has_future_annotations(self, content: str) -> bool:
         """Check if file already has the future annotations import."""
-        lines = content.split('\n')
-        for line in lines[:20]:  # Check first 20 lines
-            if 'from __future__ import annotations' in line:
-                return True
-        return False
+        return 'from __future__ import annotations' in content
 
     def add_future_import(self, file_path: Path) -> bool:
         """Add future annotations import to a Python file."""
