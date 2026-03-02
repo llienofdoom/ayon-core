@@ -1,3 +1,4 @@
+from __future__ import annotations
 from qtpy import QtCore, QtGui, QtWidgets
 
 from ayon_core import resources, style
