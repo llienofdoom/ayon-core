@@ -48,7 +48,7 @@ PLUGINS_DIR = os.path.join(AYON_CORE_ROOT, "plugins")
 
 # Global plugin paths
 PUBLISH_PATH = os.path.join(PLUGINS_DIR, "publish")
-LOAD_PATH = os.path.join(PLUGINS_DIR, "load")
+LOAD_PATH = os.path.join(PLUGINS_DIR, "loader")
 INVENTORY_PATH = os.path.join(PLUGINS_DIR, "inventory")
 
 
