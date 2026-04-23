@@ -11,7 +11,7 @@ plugin_for = ["ayon_server"]
 project_can_override_addon_version = True
 
 ayon_server_version = ">=1.8.4,<2.0.0"
-ayon_launcher_version = ">=1.0.2"
+ayon_launcher_version = ">=1.5.4"
 ayon_required_addons = {}
 ayon_compatible_addons = {
     "ayon_third_party": ">=1.3.0",
