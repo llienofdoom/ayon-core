@@ -2,4 +2,4 @@
 """Package declaring AYON addon 'core' version."""
 from __future__ import annotations
 
-__version__ = "1.9.0+ls.0.1.1"
+__version__ = "1.9.1+ls.0.1.2"
