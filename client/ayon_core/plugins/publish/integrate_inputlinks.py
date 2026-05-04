@@ -1,6 +1,6 @@
 from __future__ import annotations
 import collections
-from typing import Any, Optional, Union
+from typing import Any, Dict, List, Optional, Union
 
 import pyblish.api
 
@@ -11,7 +11,7 @@ from ayon_core.pipeline.publish.input_versions import (
 )
 
 
-LinksByType = dict[str, list[LinkPayload]]
+LinksByType = Dict[str, List[LinkPayload]]
 
 
 def create_link(
