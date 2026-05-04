@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import copy
+from dataclasses import dataclass
 import os
 from pathlib import Path
 import platform
@@ -9,17 +10,6 @@ import typing
 from typing import Any, Union, Optional
 import warnings
 
-try:
-    import attr
-except (ImportError, SyntaxError) as exc:
-    # Python 3.7 (e.g. Nuke 13.0) cannot parse typing_extensions >= 4.x
-    # which is a transitive dependency of attr. Raise a clean ImportError
-    # so farm/deadline plugins that import this module fail gracefully
-    # rather than with a cascading SyntaxError.
-    raise ImportError(
-        "attr is not importable on this Python version "
-        "(requires Python 3.8+ via typing_extensions): {}".format(exc)
-    ) from exc
 import ayon_api
 import clique
 
@@ -41,15 +31,15 @@ if typing.TYPE_CHECKING:
 log = Logger.get_logger(__name__)
 
 
-@attr.s
-class TimeData(object):
+@dataclass
+class TimeData:
     """Structure used to handle time related data."""
-    start = attr.ib(type=int)
-    end = attr.ib(type=int)
-    fps = attr.ib()
-    step = attr.ib(default=1, type=int)
-    handle_start = attr.ib(default=0, type=int)
-    handle_end = attr.ib(default=0, type=int)
+    start: int
+    end: int
+    fps: Any
+    step: int = 1
+    handle_start: int = 0
+    handle_end: int = 0
 
 
 def remap_source(path, anatomy):

@@ -1,11 +1,12 @@
 from __future__ import annotations
 import logging
 from dataclasses import dataclass
-from typing import Any, Optional, Iterable, Union
+from typing import Any, Dict, Optional, Iterable, Union
 
 import ayon_api
 
-SerializedInputVersion = dict[str, Any]
+# Dict used instead of dict[...] for Python 3.7 compatibility (Nuke 13.0)
+SerializedInputVersion = Dict[str, Any]
 
 
 # LinkPayload dataclass could currently live in `integrate_inputlinks.py`
