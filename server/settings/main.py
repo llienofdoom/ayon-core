@@ -168,6 +168,14 @@ class CoreImageIOConfigProfilesModel(BaseSettingsModel):
         default_factory=list,
         title="Task names"
     )
+    app_names: list[str] = SettingsField(
+        default_factory=list,
+        title="Application names",
+        placeholder="{group}/{variant} (maya/2026,  ...)",
+        description=(
+            "Application full name (group/variant) from applications addon."
+        ),
+    )
     type: str = SettingsField(
         title="Profile type",
         enum_resolver=_ocio_config_profile_types,
@@ -383,6 +391,7 @@ DEFAULT_VALUES = {
         "ocio_config_profiles": [
             {
                 "host_names": [],
+                "app_names": [],
                 "task_types": [],
                 "task_names": [],
                 "type": "builtin_path",

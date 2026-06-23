@@ -1,3 +1,3 @@
 # -*- coding: utf-8 -*-
 """Package declaring AYON addon 'core' version."""
-__version__ = "1.9.1+ls.0.1.3"
+__version__ = "1.9.7+ls.0.2.0"

@@ -6,8 +6,9 @@ from .exceptions import (
     TemplateMissingKey,
     AnatomyTemplateUnsolved,
 )
-from .anatomy import Anatomy
+from .roots import AnatomyRoot, AnatomyRoots
 from .templates import AnatomyTemplateResult, AnatomyStringTemplate
+from .anatomy import Anatomy
 
 
 __all__ = (
@@ -17,8 +18,11 @@ __all__ = (
     "TemplateMissingKey",
     "AnatomyTemplateUnsolved",
 
-    "Anatomy",
+    "AnatomyRoot",
+    "AnatomyRoots",
 
     "AnatomyTemplateResult",
     "AnatomyStringTemplate",
+
+    "Anatomy",
 )

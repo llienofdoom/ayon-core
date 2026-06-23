@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 from .cache import CacheItem, NestedCacheItem
+from .settings import SettingsModel
 from .projects import (
     TagItem,
     StatusItem,
@@ -27,6 +28,8 @@ from .users import UsersModel
 __all__ = (
     "CacheItem",
     "NestedCacheItem",
+
+    "SettingsModel",
 
     "TagItem",
     "StatusItem",

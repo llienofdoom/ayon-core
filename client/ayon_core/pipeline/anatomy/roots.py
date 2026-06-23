@@ -2,6 +2,7 @@ from __future__ import annotations
 import os
 import platform
 import numbers
+import warnings
 
 from ayon_core.lib import Logger, StringTemplate
 from ayon_core.lib.path_templates import FormatObject
@@ -9,7 +10,7 @@ from ayon_core.lib.path_templates import FormatObject
 from .exceptions import RootMissingEnv
 
 
-class RootItem(FormatObject):
+class AnatomyRoot(FormatObject):
     """Represents one item or roots.
 
     Holds raw data of root item specification. Raw data contain value
@@ -244,6 +245,21 @@ class RootItem(FormatObject):
         return (result, output)
 
 
+# TODO remove
+class RootItem(AnatomyRoot):
+    """DEPRECATED: Use 'AnatomyRoot' instead.
+
+    Backwards compatibility added 2026/05/21.
+    """
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        warnings.warn(
+            "RootItem is deprecated. Use AnatomyRoot instead.",
+            DeprecationWarning,
+            stacklevel=2,
+        )
+
+
 class AnatomyRoots:
     """Object which should be used for formatting "root" key in templates.
 
@@ -297,7 +313,7 @@ class AnatomyRoots:
             src_platform (Optional[str]): Specify source platform. This is
                 recommended to not use and keep unset until you really want
                 to use specific platform.
-            roots (Optional[Union[dict, RootItem])): It is possible to remap
+            roots (Optional[Union[dict, AnatomyRoot])): It is possible to remap
                 path with different roots then instance where method was
                 called has.
 
@@ -319,7 +335,7 @@ class AnatomyRoots:
             if not dst_platform:
                 return path
 
-        if isinstance(roots, RootItem):
+        if isinstance(roots, AnatomyRoot):
             return roots.path_remapper(path, dst_platform, src_platform)
 
         for _root in roots.values():
@@ -354,7 +370,7 @@ class AnatomyRoots:
         if roots is None:
             raise ValueError("Roots are not set. Can't find path.")
 
-        if isinstance(roots, RootItem):
+        if isinstance(roots, AnatomyRoot):
             return roots.find_root_template_from_path(path)
 
         for root_name, _root in roots.items():
@@ -412,7 +428,7 @@ class AnatomyRoots:
             roots = self.roots
 
         output = []
-        if isinstance(roots, RootItem):
+        if isinstance(roots, AnatomyRoot):
             for value in roots.raw_data.values():
                 output.append(value)
             return output
@@ -427,7 +443,7 @@ class AnatomyRoots:
         if roots is None:
             roots = self.roots
 
-        if isinstance(roots, RootItem):
+        if isinstance(roots, AnatomyRoot):
             key_items = [self.env_prefix]
             for _key in keys:
                 key_items.append(_key.upper())
@@ -463,7 +479,7 @@ class AnatomyRoots:
                 )
             }
 
-        if isinstance(roots, RootItem):
+        if isinstance(roots, AnatomyRoot):
             key_items = [AnatomyRoots.env_prefix]
             for _key in keys:
                 key_items.append(_key.upper())
@@ -514,7 +530,7 @@ class AnatomyRoots:
         Default roots are loaded if project override's does not contain roots.
 
         Returns:
-            `RootItem` or `dict` with multiple `RootItem`s when multiroot
+            `AnatomyRoot` or `dict` with multiple `AnatomyRoot`s when multiroot
             setting is used.
         """
 
@@ -522,24 +538,23 @@ class AnatomyRoots:
 
     @staticmethod
     def _parse_dict(data, parent):
-        """Parse roots raw data into RootItem or dictionary with RootItems.
+        """Parse roots raw data into dictionary with AnatomyRoots.
 
-        Converting raw roots data to `RootItem` helps to handle platform keys.
-        This method is recursive to be able handle multiroot setup and
-        is static to be able to load default roots without creating new object.
+        Converting raw roots data to `AnatomyRoot` helps to handle platform
+            keys.
 
         Args:
             data (dict): Should contain raw roots data to be parsed.
             parent (AnatomyRoots): Parent object set as parent
-                for ``RootItem``.
+                for ``AnatomyRoot``.
 
         Returns:
-            dict[str, RootItem]: Root items by name.
+            dict[str, AnatomyRoot]: Root items by name.
 
         """
         output = {}
         for root_name, root_values in data.items():
-            output[root_name] = RootItem(
+            output[root_name] = AnatomyRoot(
                 parent, root_values, root_name
             )
         return output

@@ -1,4 +1,5 @@
 from __future__ import annotations
+
 from abc import ABC, abstractmethod
 from dataclasses import dataclass, asdict
 from typing import (
@@ -192,6 +193,10 @@ class AbstractPublisherBackend(AbstractPublisherCommon):
         task_name: str,
         sender: Optional[str] = None
     ) -> Union[TaskItem, None]:
+        pass
+
+    @abstractmethod
+    def get_project_settings(self, project_name: str | None) -> dict:
         pass
 
     @abstractmethod

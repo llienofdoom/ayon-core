@@ -1,6 +1,7 @@
 from __future__ import annotations
 from qtpy import QtWidgets, QtCore, QtGui
 
+from ayon_core.lib.icon_definitions import MaterialSymbolsIcon
 from ayon_core.tools.utils import get_qt_icon
 
 from .model import VERSION_LABEL_ROLE, CONTAINER_VERSION_LOCKED_ROLE
@@ -76,9 +77,7 @@ class VersionDelegate(QtWidgets.QStyledItemDelegate):
 
     def _get_locked_icon(cls):
         if cls._locked_icon is None:
-            cls._locked_icon = get_qt_icon({
-                "type": "material-symbols",
-                "name": "lock",
-                "color": "white",
-            })
+            cls._locked_icon = get_qt_icon(
+                MaterialSymbolsIcon("lock", color="white")
+            )
         return cls._locked_icon
