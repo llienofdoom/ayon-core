@@ -195,7 +195,8 @@ def get_drawtext_kwargs(align, resolution, text: str, options: dict):
 
     # padding
     pad_l = pad_r = pad_t = pad_b = 0
-    if padding := options.get("bg_padding"):
+    padding = options.get("bg_padding")
+    if padding:
         # distance from the top of an uppercase A to the ascend
         pad_t = max(padding - ascent, 0)
         pad_b = max(padding - descent, 0)

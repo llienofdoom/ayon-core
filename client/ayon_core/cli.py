@@ -255,7 +255,8 @@ def _set_addons_environments(addons_manager):
     """Set global environments for AYON addons."""
 
     # Merge environments with current environments and update values
-    if module_envs := addons_manager.collect_global_environments():
+    module_envs = addons_manager.collect_global_environments()
+    if module_envs:
         parsed_envs = parse_env_variables_structure(module_envs)
         env = merge_env_variables(parsed_envs, dict(os.environ))
         os.environ.clear()

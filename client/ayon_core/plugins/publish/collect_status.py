@@ -38,7 +38,7 @@ class CollectStatus(pyblish.api.InstancePlugin, AYONPyblishPluginMixin):
         if status_state == "use_status":
             status = attr_values.get("status", "")
         elif status_state.startswith("status|"):
-            status = status_state.removeprefix("status|")
+            status = status_state[len("status|"):]
         else:
             return
         if status:

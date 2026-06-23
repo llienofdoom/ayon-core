@@ -43,7 +43,8 @@ class PythonSyntaxHighlighter(QtGui.QSyntaxHighlighter):
         index = 0
         for token, value in self.lexer.get_tokens(text):
             length = len(value)
-            if fmt := self.formats.get(token):
+            fmt = self.formats.get(token)
+            if fmt:
                 self.setFormat(index, length, fmt)
 
             index += length
@@ -78,7 +79,8 @@ class PythonSyntaxHighlighter(QtGui.QSyntaxHighlighter):
                 continue
 
             token_format = QtGui.QTextCharFormat()
-            if color := token_style.get("color"):
+            color = token_style.get("color")
+            if color:
                 color = f"#{color}"
                 token_format.setForeground(QtGui.QColor(color))
             if token_style.get("bold"):

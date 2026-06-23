@@ -31,7 +31,8 @@ class PythonCodeEditor(QtWidgets.QPlainTextEdit):
             return
 
         # Apply background color from the style
-        if background_color := highlighter.style.background_color:
+        background_color = highlighter.style.background_color
+        if background_color:
             self.setStyleSheet((
                 "QPlainTextEdit {"
                 f"background-color: {background_color};"
