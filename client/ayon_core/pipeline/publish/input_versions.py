@@ -18,6 +18,7 @@ SerializedInputVersion = Dict[str, Any]
 class LinkPayload:
     input_id: str
     output_id: str
+    link_type: str
     data: dict[str, Any]
 
 

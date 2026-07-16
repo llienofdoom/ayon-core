@@ -56,6 +56,7 @@ from .attribute_definitions import (
     UIDef,
     UISeparatorDef,
     UILabelDef,
+    ButtonDef,
 
     UnknownDef,
     NumberDef,
@@ -214,6 +215,7 @@ __all__ = [
     "UIDef",
     "UISeparatorDef",
     "UILabelDef",
+    "ButtonDef",
 
     "UnknownDef",
     "NumberDef",
