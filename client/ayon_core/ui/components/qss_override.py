@@ -49,9 +49,12 @@ def _collect_child_widgets(w: QWidget, seen: set[int], out: list) -> None:
             _collect_child_widgets(child, seen, out)
 
     # Collect widgets from layouts
-    if (layout := w.layout()) is not None:
+    layout = w.layout()
+    if layout is not None:
         for i in range(layout.count()):
-            if (item := layout.itemAt(i)) and (item_widget := item.widget()):
+            item = layout.itemAt(i)
+            item_widget = item.widget() if item else None
+            if item and item_widget:
                 _collect_child_widgets(item_widget, seen, out)
 
 

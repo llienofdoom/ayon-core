@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 name = "core"
 title = "Core"
 version = "1.9.8"

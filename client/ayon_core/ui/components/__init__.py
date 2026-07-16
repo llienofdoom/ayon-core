@@ -3,6 +3,7 @@
 This package provides reusable Qt widgets styled according to the AYON
 design system.
 """
+from __future__ import annotations
 
 from .buttons import AYButton
 from .check_box import AYCheckBox

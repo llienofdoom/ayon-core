@@ -1,4 +1,5 @@
 """Tests for StyleDict class."""
+from __future__ import annotations
 
 from ayon_core.ui.style import StyleDict
 

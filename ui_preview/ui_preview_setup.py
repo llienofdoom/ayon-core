@@ -11,6 +11,7 @@ import each file in 'ui_preview' package manually. But for now this should
 be enough.
 
 """
+from __future__ import annotations
 import sys
 from pathlib import Path
 

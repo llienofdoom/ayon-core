@@ -1,3 +1,4 @@
+from __future__ import annotations
 from typing import Optional, Any
 
 from ayon_core.lib.icon_definitions import MaterialSymbolsIcon

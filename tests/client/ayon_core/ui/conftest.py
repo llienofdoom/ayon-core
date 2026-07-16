@@ -2,6 +2,7 @@
 
 Sets QT_QPA_PLATFORM=offscreen before any Qt import so tests run headless.
 """
+from __future__ import annotations
 
 import json
 import logging
